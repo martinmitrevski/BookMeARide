@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="ObA-dk-sSI">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Intent View Controller-->
+        <scene sceneID="7MM-of-jgj">
+            <objects>
+                <viewController id="ObA-dk-sSI" customClass="IntentViewController" customModule="SiriUI" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qkL-Od-lgU"/>
+                        <viewControllerLayoutGuide type="bottom" id="n38-gi-rB5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zMn-AG-sqS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="car.png" translatesAutoresizingMaskIntoConstraints="NO" id="aAd-Cy-sgZ">
+                                <rect key="frame" x="16" y="22" width="83" height="57"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="83" id="5bI-9b-2X6"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BookMeARide - the fastest way to get a ride!" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KKA-Iq-Jkb">
+                                <rect key="frame" x="107" y="22" width="193" height="57"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="KKA-Iq-Jkb" secondAttribute="trailing" constant="20" id="4Qp-tv-uGn"/>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="aAd-Cy-sgZ" secondAttribute="bottom" constant="21" id="C4t-LG-8zz"/>
+                            <constraint firstItem="aAd-Cy-sgZ" firstAttribute="leading" secondItem="zMn-AG-sqS" secondAttribute="leading" constant="16" id="EkF-rf-OlE"/>
+                            <constraint firstItem="n38-gi-rB5" firstAttribute="top" secondItem="KKA-Iq-Jkb" secondAttribute="bottom" constant="21" id="GMr-GU-iB6"/>
+                            <constraint firstItem="aAd-Cy-sgZ" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" constant="2" id="QZo-J0-EEL"/>
+                            <constraint firstItem="KKA-Iq-Jkb" firstAttribute="leading" secondItem="aAd-Cy-sgZ" secondAttribute="trailing" constant="8" id="Xuu-q1-fs9"/>
+                            <constraint firstItem="KKA-Iq-Jkb" firstAttribute="top" secondItem="qkL-Od-lgU" secondAttribute="bottom" constant="2" id="inf-nR-KGe"/>
+                        </constraints>
+                    </view>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="100"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="X47-rx-isc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="129.59999999999999" y="143.02848575712144"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="car.png" width="512" height="512"/>
+    </resources>
+</document>
